@@ -7,10 +7,9 @@
   const $ = (s, c = document) => c.querySelector(s);
   const $$ = (s, c = document) => [...c.querySelectorAll(s)];
   const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
-  // ?motion=1 — показать все анимации, даже если в системе включено «уменьшить движение»
-  const forceMotion = /[?&]motion(=|&|$)/.test(location.search);
-  if (forceMotion) root.classList.add('force-motion');
-  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches && !forceMotion;
+  // Анимации включены на всех устройствах, независимо от системной настройки «уменьшить движение»
+  root.classList.add('force-motion');
+  const reduce = false;
   const finePointer = matchMedia('(hover: hover) and (pointer: fine)').matches;
 
   /* ---------- Московское время ---------- */

@@ -191,7 +191,7 @@
   const board = $('[data-board]');
   if (board) {
     let z = 10;
-    const canDrag = () => matchMedia('(min-width: 761px)').matches;
+    const canDrag = () => matchMedia('(min-width: 1025px)').matches;
     $$('.print', board).forEach(p => {
       let sx = 0, sy = 0, ox = 0, oy = 0, drag = false;
       p.addEventListener('pointerdown', (e) => {

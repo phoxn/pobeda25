@@ -19,7 +19,7 @@ def page(fname, title, desc, body):
   <meta name="description" content="{desc}">
   <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/style.css?v=12">
+  <link rel="stylesheet" href="assets/css/style.css?v=16">
 </head>
 <body>
   <header class="doc-top">
